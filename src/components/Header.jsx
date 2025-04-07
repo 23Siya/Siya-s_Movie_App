@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-
+import NavMenu from './NavMenu';
 function Header({ setCategory, setSelectedGenre }) {
     return (
       <header className="bg-blue-600 p-4 text-white">
@@ -9,7 +8,7 @@ function Header({ setCategory, setSelectedGenre }) {
           <h1 className="text-2xl font-bold">Movie App</h1>
   
           {/* Navbar Component */}
-          <Navbar setCategory={setCategory} setSelectedGenre={setSelectedGenre} />
+          <NavMenu setCategory={setCategory} setSelectedGenre={setSelectedGenre} />
         </div>
       </header>
     );
